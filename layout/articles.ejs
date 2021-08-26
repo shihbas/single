@@ -1,0 +1,22 @@
+<article>
+
+    <h3 class="main">Articles</h3>
+    <% site.posts.each(function(post) { %>
+        <a href="<%- url_for(post.path) %>" class="article-link">
+            <div class="time">
+                <div class="month"><%- post.date.format("MMM") %></div>
+                <div class="year"><%- post.date.format("YYYY") %></div>
+            </div>
+
+            <div class="details">
+                <div class="title">
+                    <%- post.title %>
+                </div>
+
+                <div class="summary">
+                    <%- truncate(post.summary, 140) %>
+                </div>
+            </div>
+        </a>
+    <% }); %>
+</article>

@@ -1,0 +1,67 @@
+menu:
+  Index:
+    url: /
+  Articles:
+    url: /articles
+  Photo:
+    url: /photo
+  Now:
+    url: /now
+
+
+Header:
+  title: "Single"
+  slogan: "A code representing a musical note, a program into a song"
+  github:
+    enable: true
+    url: "https://github.com/shihbas/single"
+
+Footer:
+  copyright:
+    enable: true
+    start: 2021
+    end: 2021
+    source:
+      text: "shihbas"
+      url: "https://github.com/shihbas"
+  theme:
+    isShowHexo: true
+    isShowSingle: true
+  icp:
+    enable: true
+    text: "ipc name"
+    url: "http://www.ipc.url"
+
+
+Index:
+  sayHello: true
+  sayAny: "
+
+  <br>这个主题是我献给***自己和所有人***的一个礼物. <br>
+
+  它之所以被叫做`单曲`(single),是有一些个人的浪漫想法. 在我开心写代码的时候总有一种编制乐谱的错觉(PS: 虽然我没有谈过钢琴), 而分享我的代码或代码相关知识时, 就是在对大众吟唱一首首个人单曲. <br>
+
+  虽然我的代码水平换算成**音乐水平**, 无法企及殿堂级演奏家, 但我自认为至少能称得上一个小酒馆的驻场调音师. 二者演奏音乐时都一定是相同的高兴. 所以, 赶紧来吧! 用这个主题来演奏属于你的快乐单曲. <br>
+
+  在此,感谢 [Martin Rue](https://martinrue.com/),当前主题是以他的blog为基础,做了一些改动而来. 与他邮件沟通后，他非常爽快的同意我在他的基础上创作. 推荐大家可以去阅读他的博客,许多思考文章都十分的棒. 再次感谢 [Martin Rue](https://martinrue.com/). 
+  "
+
+Photo:
+  p1:
+    image: "/assets/images/china_first_email.jpeg"
+    name: "中国第一封电子邮件"
+    description: "“Across the Great Wall we can reach every corner in the world. (越过长城,走向世界)”这是1987年9月20日从北京向海外发出的中国第一封电子邮件. 这也预示着,互联网时代悄然叩响了中国的大门"
+    time: "1987年9月20日"
+    place: "北京·计算机应用技术研究所"
+  p2:
+    image: "/assets/images/work.jpeg"
+    name: "沉迷工作的我"
+    description: "沉迷工作,无法自拔的我"
+    time: "2021年8月10日"
+    place: "北京·某公司"
+  p3:
+    image: "/assets/images/work1.jpeg"
+    name: "工作被打断的我"
+    description: "沉迷工作时突然被打断！！！我的刀呢！"
+    time: "2021年8月10日"
+    place: "北京·某公司"

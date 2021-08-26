@@ -1,0 +1,38 @@
+<article>
+    <%- css('css/photo.css') %>
+    <h3 class="main">Photo</h3>
+    <div class="photos" id="photos_id">
+
+    <% if (theme.Photo) { %>
+    <% // the photos of theme _config.yml.
+        var photos=theme.Photo;
+    %>
+        <% Object.keys(photos).forEach(function(pid) { %>
+        <div class="photo">
+            <div class="image">
+                <img alt="<%- photos[pid].name %>" src="<%- photos[pid].image %>" />
+            </div>
+        
+            <p>
+                <%- photos[pid].description %>
+            </p>
+        
+            <div class="tags">
+                <span><%- photos[pid].time %></span>
+                <span><%- photos[pid].place %></span>
+            </div>
+        </div>
+        <% }); %>
+    <% } %>
+
+    </div>
+</article>
+
+
+<%- css('css/viewer.min.css') %>
+<%- js([{ src: 'js/viewer.min.js'}]) %>
+
+<script type="text/javascript">
+    Viewer.setDefaults({"toolbar": 0, "title": 4})
+    var viewer = new Viewer(document.getElementById('photos_id'));
+</script>

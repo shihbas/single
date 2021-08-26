@@ -1,0 +1,80 @@
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.photos .photo {
+  background: #f8f8f8;
+  border: solid 1px #eee;
+  border-radius: 4px;
+  margin-bottom: 4%;
+  min-width: 280px;
+  width: 48%;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: #333;
+}
+
+.dark .photos .photo {
+  background: #3b3b3b;
+  border-color: #505050;
+  color: #fff;
+}
+
+.photos .photo .image {
+  margin: 0 auto 10px auto;
+  width: 320px;
+  height: 280px;
+  line-height: 0;
+  overflow: hidden;
+  border: solid 3px #fff;
+}
+
+.photos .photo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.photos .photo p {
+  padding: 0 30px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.photos .photo .tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos .photo .tags span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  background: #eee;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 5px;
+  letter-spacing: 0.05rem;
+}
+
+.dark .photos .photo .tags span {
+  border-color: #666;
+  background: #444;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .photos .photo {
+    margin-bottom: 4%;
+    min-width: 280px;
+    width: 98%;
+  }
+}
