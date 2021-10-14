@@ -1,0 +1,46 @@
+<%
+    var title = theme.Header.title;
+
+    if (page.title) {
+        title = title + " | " + page.title
+    }
+
+    // keywords.
+    var keyWords = title;
+    if (page.keywords) {
+        keyWords = page.keywords;
+    }
+
+    // description.
+    var description = title;
+    if (page.summary) {
+        description = page.summary;
+    }
+
+%>
+
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="<%= keyWords %>">
+    <meta name="description" content="<%= description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="<%- url_for('assets/favicon.ico') %>">
+    <link rel="icon" href="<%- url_for('assets/favicon.ico') %>">
+
+    <%- css('css/index.css') %>
+    <%- js([{ src: 'js/lib.js' }]) %>
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Single">
+    <meta property="og:description" content="">
+
+</head>

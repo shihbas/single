@@ -16,5 +16,3 @@ class Lib {
 }
 
 const lib = new Lib();
-
-export {lib};

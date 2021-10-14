@@ -1,7 +1,9 @@
 <article>
-    <% if (theme.Index.sayHello) { %>
-        <%- partial('other/hello') %>
+    <% if (theme.Index) { %>
+        <% if (theme.Index.sayHello) { %>
+            <%- partial('other/hello') %>
+        <% } %>
+        <br>
+        <%- markdown(theme.Index.sayAny) %>
     <% } %>
-    <br>
-    <%- markdown(theme.Index.sayAny) %>
 </article>

@@ -1,23 +1,27 @@
 <% if(is_home()) { %>
 <div class="footer">
     <p>
-        <% if (theme.Footer.icp.enable) { %>
-            <img width="10px" height="10px" src="<%- url_for('assets/icp.png') %>" /><a
-                href="<%- theme.Footer.icp.url %>">
-                <%- theme.Footer.icp.text %>
-            </a>
-        <% } %>
-        <% if (theme.Footer.copyright.enable) { %>
-            | Copyright&nbsp;&copy; <%- theme.Footer.copyright.start %>-<%- theme.Footer.copyright.end %> by <a
-                        href="<%- theme.Footer.copyright.source.url %>">
-                        <%- theme.Footer.copyright.source.text %>
-            </a>
-        <% } %>
-        <% if (theme.Footer.theme.isShowHexo) { %>
-            | Powered by <a href="https://hexo.io/">Hexo</a>
-        <% } %>
-        <% if (theme.Footer.theme.isShowSingle) { %>
-            | Theme <a href="https://github.com/shihbas/single">Single</a>
+        <% if (theme.Footer) { %>
+            <% if (theme.Footer.icp && theme.Footer.icp.enable) { %>
+                <img width="10px" height="10px" src="<%- url_for('assets/icp.png') %>" /><a
+                    href="<%- theme.Footer.icp.url %>">
+                    <%- theme.Footer.icp.text %>
+                </a>
+            <% } %>
+            <% if (theme.Footer.copyright && theme.Footer.copyright.enable) { %>
+                | Copyright&nbsp;&copy; <%- theme.Footer.copyright.start %>-<%- theme.Footer.copyright.end %> by <a
+                            href="<%- theme.Footer.copyright.source.url %>">
+                            <%- theme.Footer.copyright.source.text %>
+                </a>
+            <% } %>
+            <% if (theme.Footer.theme) { %>
+                <% if (theme.Footer.theme.isShowHexo) { %>
+                    | Powered by <a href="https://hexo.io/">Hexo</a>
+                <% } %>
+                <% if (theme.Footer.theme.isShowSingle) { %>
+                    | Theme <a href="https://github.com/shihbas/single">Single</a>
+                <% } %>
+            <% } %>
         <% } %>
     </p>
 </div>

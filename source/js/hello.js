@@ -1,5 +1,3 @@
-import { lib } from "./lib.js"
-
 function hello() {
   const hellos = [
     { lang: "en", word: "Hello", dir: "rtl" },

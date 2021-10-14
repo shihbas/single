@@ -1,4 +1,3 @@
-import {lib} from "./lib.js"
 
 function isDarkMode() {
   const mode = localStorage.getItem("darkmode");
@@ -43,3 +42,4 @@ function addClickEventToButton() {
 }
 
 lib.onReady(addClickEventToButton)
+setClass();

@@ -1,14 +1,3 @@
-menu:
-  Index:
-    url: /
-  Articles:
-    url: /articles
-  Photo:
-    url: /photo
-  Now:
-    url: /now
-
-
 Header:
   title: "Single"
   slogan: "A code representing a musical note, a program into a song"
@@ -16,22 +5,16 @@ Header:
     enable: true
     url: "https://github.com/shihbas/single"
 
-Footer:
-  copyright:
-    enable: true
-    start: 2021
-    end: 2021
-    source:
-      text: "shihbas"
-      url: "https://github.com/shihbas"
-  theme:
-    isShowHexo: true
-    isShowSingle: true
-  icp:
-    enable: true
-    text: "ipc name"
-    url: "http://www.ipc.url"
-
+Menu:
+  Articles:
+    url: /articles/
+    name: Articles
+  Photo:
+    url: /photo/
+    name: Photo
+  Now:
+    url: /now/
+    name: Now
 
 Index:
   sayHello: true
@@ -45,6 +28,22 @@ Index:
 
   在此,感谢 [Martin Rue](https://martinrue.com/),当前主题是以他的blog为基础,做了一些改动而来. 与他邮件沟通后，他非常爽快的同意我在他的基础上创作. 推荐大家可以去阅读他的博客,许多思考文章都十分的棒. 再次感谢 [Martin Rue](https://martinrue.com/). 
   "
+
+Footer:
+  icp:
+    enable: true
+    text: "ipc name"
+    url: "http://www.ipc.url"
+  copyright:
+    enable: true
+    start: 2021
+    end: 2021
+    source:
+      text: "shihbas"
+      url: "https://github.com/shihbas"
+  theme:
+    isShowHexo: true
+    isShowSingle: true
 
 Photo:
   p1:
